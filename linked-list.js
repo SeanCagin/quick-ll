@@ -113,7 +113,7 @@ class LinkedList {
     if (index == 0) {
       let temp = this.head;
       this.head = this.head.next;
-      size--;
+      this.size--;
       return temp.value;
     }
     if (index == this.size - 1) {
