@@ -14,5 +14,6 @@ console.log(linkedList.find(3));
 console.log(linkedList.contains(69));
 console.log(linkedList.insertAt(17, 3).toString());
 console.log(linkedList.removeAt(5));
+console.log(linkedList.toArray());
 
 export default linkedList;

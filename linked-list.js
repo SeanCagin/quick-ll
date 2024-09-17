@@ -140,6 +140,15 @@ class LinkedList {
     retval += "null";
     return retval;
   }
+  toArray() {
+    let retval = [];
+    let ptr = this.head;
+    while (ptr != null) {
+      retval.push(ptr.value);
+      ptr = ptr.next;
+    }
+    return retval;
+  }
 }
 
 export { LinkedList };
