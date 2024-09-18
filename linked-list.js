@@ -149,6 +149,15 @@ class LinkedList {
     }
     return retval;
   }
+  clone() {
+    let retval = new LinkedList();
+    let ptr = this.head;
+    while (ptr != null) {
+      retval.append(ptr.value);
+      ptr = ptr.next;
+    }
+    return retval;
+  }
 }
 
 export { LinkedList };
